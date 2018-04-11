@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js proba - nacini za pozivanje js-a</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
+        <!-- ili -->
+        <script>
+            console.log('prvo (ucitava se redom)');
+            alert("Caos!");
+            console.log('drugo');
+        </script>
+
+    </head>
+    <body>
+        <h1>Vežbam malo JavaScript</h1>
+
+        <a href="#" onclick="alert('Noooo'); console.log('trece');">Click me</a>
+        
+        <!-- <script>
+            document.querySelector('a').onclick = function() {
+                alert('');
+                console.log('trece');
+            }
+        </script>  -->
+    </body>
+</html>

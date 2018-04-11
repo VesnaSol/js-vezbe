@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS vezba 3</title>
+</head>
+<body>
+
+  <h1 class="heading">Wellcome!</h1>
+  <button id="changer" onclick="hello()">Click me!</button>
+  
+  <script>
+  
+    function hello() {
+     var heading = document.querySelector('.heading');
+     heading.innerHTML = 'Goodbye!';
+   }
+    
+    // ili......................:
+    var dugme = document.querySelector('#changer');
+    dugme.addEventListener('click',  function() {
+     var heading = document.querySelector('.heading');
+     heading.innerHTML = 'Goodbye!';
+    });
+    
+
+// ili: .................
+     document.getElementById('changer').onclick = function() {
+          document.querySelector('.heading').innerHTML = 'Goodbye!';
+          };
+    
+    
+  </script>
+</body>
+</html>
